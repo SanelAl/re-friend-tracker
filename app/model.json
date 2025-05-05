@@ -87,9 +87,10 @@
                     {
                         "id": "comment",
                         "type": "text",
-                        "name": "Comment",
+                        "name": "Comments",
                         "width": 2,
-                        "required": true
+                        "height": 4,
+                        "maxLength": 5000
                     },
                     {
                         "type": "deleteButton",
@@ -108,17 +109,37 @@
             {
                 "id": "ActivityForm",
                 "title": "Activity",
-                "url": "/friend/:friendKey/activity",
+                "url": "/activity",
                 "formFieldList": [
                     {
-                        "id":   "activity",
+                        "id": "name",
+                        "type": "text",
+                        "name": "Activity Name",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
+                        "id": "date",
+                        "type": "date",
+                        "name": "date",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
+                        "id":   "location",
                         "type": "autocomplete",
-                        "name": "Activity",
-                        "url": "/activity",
-                        "defaultKey": "activityKey",
-                        "readonly": true,
-                        "form": "ActivityForm",
+                        "name": "Location",
+                        "url": "/location",
+                        "form": "LocationForm",
                         "width": 2
+                    },
+                    {
+                        "id": "comment",
+                        "type": "text",
+                        "name": "Comments",
+                        "width": 2,
+                        "height": 4,
+                        "maxLength": 5000
                     },
                     {
                         "type": "deleteButton",
@@ -156,9 +177,10 @@
                     {
                         "id": "comment",
                         "type": "text",
-                        "name": "Comment",
+                        "name": "Comments",
                         "width": 2,
-                        "required": true
+                        "height": 4,
+                        "maxLength": 5000
                     },
                     {
                         "type": "deleteButton",
